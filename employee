@@ -1,0 +1,31 @@
+package NewDemo;
+
+import java.util.Scanner;
+
+class Company
+{
+	public static void main(String[]args) {
+		Employee emp1 = new Employee();
+		Employee emp2 = new Employee();
+		Employee emp3 = new Employee();
+		emp1.input();
+		emp2.input();
+		emp3.input();
+	}	
+}
+
+public class Employee {
+	String name;
+	String address;
+	int yr;
+	Scanner s = new Scanner(System.in);
+	void input() {
+		System.out.println("enter year: ");
+		yr=s.nextInt();
+		System.out.println("enter name: ");
+		name=s.next();
+		System.out.println("enter address: ");
+		address=s.next();
+	}
+	
+}
